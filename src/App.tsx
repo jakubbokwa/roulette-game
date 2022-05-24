@@ -1,24 +1,11 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { ReactComponent as RouletteWheel } from "./components/roulette/roulette.svg";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="w-full flex justify-center mt-4">
+      <div className="w-1/3 hover:rotate-[720deg] transition-all duration-[3000ms] ease-in-out">
+        <RouletteWheel />
+      </div>
     </div>
   );
 }
